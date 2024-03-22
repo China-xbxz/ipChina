@@ -22,7 +22,7 @@ jobs:
         pip install --upgrade pip
     - name: Install dependencies
       run: | 
-        pip install output_files
+        pip install git+https://github.com/TekWizely/output-files.git
     - name: Run ip.py script
       run: |
         python ip.py
