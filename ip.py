@@ -16,8 +16,6 @@ if response.status_code == 200:
     with open('Chinaip.txt', 'w') as f:
         f.write('\n'.join(converted_data))
 
-    # 打印成功消息
-    print("成功将转换后的数据保存到Chinaip.txt文件中。")
 else:
     # 处理错误，例如引发异常或打印错误消息
     print("获取数据失败。")
