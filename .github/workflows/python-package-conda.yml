@@ -1,8 +1,8 @@
 name: Run ip.py script
 
-on: 
-  schedule:
-    - cron: '0 */6 * * *'
+on:
+  push:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
         pip install --upgrade pip
     - name: Install dependencies
       run: | 
-        pip install requests output_files
+        pip install output_files==0.2.4
     - name: Run ip.py script
       run: |
         python ip.py
