@@ -20,12 +20,6 @@ jobs:
     - name: Update pip
       run: |
         pip install --upgrade pip
-    - name: Install dependencies
-      run: | 
-        pip install git+https://github.com/TekWizely/output-files.git
     - name: Run ip.py script
       run: |
         python ip.py
-        from output_files import append
-        with open("ceshi.txt", "a") as f:
-            append(f, "Hello, world!")
