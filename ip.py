@@ -1,7 +1,7 @@
 import requests
 
 # URL
-url = "https://ispip.clang.cn/all_cn_cidr.txt"
+url = "https://ispip.clang.cn/all_cn.txt"
 
 # 获取数据
 response = requests.get(url)
