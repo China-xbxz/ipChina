@@ -1,7 +1,7 @@
 import requests
 
 # URL
-url = "https://ispip.clang.cn/all_cn.txt"
+url = "https://raw.githubusercontent.com/metowolf/iplist/master/data/country/CN.txt"
 
 # 获取数据
 response = requests.get(url)
